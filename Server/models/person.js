@@ -14,7 +14,7 @@ var infractionSchema = new Schema({
         required: true
     },
     paid:  {
-        type: Boolean,
+        type: String,
         required: true
     },
 
@@ -38,13 +38,13 @@ var personSchema = new Schema({
         required: true
     },
 
-    nationality: {
+    birthdate: {
         type: String,
-        required: true
+        required: false
     },
-    dateExperation: {
+    address: {
         type: String,
-        required: true
+        required: false
     },
 
     infractions:[infractionSchema]
@@ -54,6 +54,6 @@ var personSchema = new Schema({
     timestamps: true
 });
 
-var Dishes = mongoose.model('Dish', personSchema);
+var persons = mongoose.model('person', personSchema);
 
-module.exports = Dishes;
+module.exports = persons;

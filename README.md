@@ -2,7 +2,9 @@
 
 this example test how to post on rabbitMq a string (in our case CIN of a person) and get his informations from Mongodb
 
-requirements : install Mongodb , cretae Database 
+requirements :
+install Mongodb , cretae Database 
+create a rabbitMq account on Cloud https://www.cloudamqp.com/docs/index.html
 
 to install rabbitMQ librery run : npm install --save amqplib  
 

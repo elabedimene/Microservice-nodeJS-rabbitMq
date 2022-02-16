@@ -8,7 +8,7 @@ to install rabbitMQ librery run : npm install --save amqplib
 
 in the first terminal run : 
 cd server
-node server.js
+npm start
  
 in the second run 
 node client.js "CIN of the person"
